@@ -19,6 +19,11 @@ class MainActivity : AppCompatActivity() {
                     startActivity(Intent(this@MainActivity, KotlinDecorator::class.java))
                 }
             }
+            button("Kotlin Singleton") {
+                onClick {
+                    startActivity(Intent(this@MainActivity, KotlinSingleton::class.java))
+                }
+            }
         }
     }
 }
