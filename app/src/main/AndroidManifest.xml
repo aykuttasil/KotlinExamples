@@ -20,6 +20,7 @@
         <activity android:name=".KotlinPattern.KotlinDecorator" />
         <activity android:name=".KotlinPattern.KotlinSingleton" />
         <activity android:name=".KotlinPattern.KotlinTemplate" />
+        <activity android:name=".KotlinPattern.KotlinStrategy" />
     </application>
 
 </manifest>

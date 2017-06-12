@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import com.aykuttasil.kotlinexamples.KotlinPattern.KotlinDecorator
 import com.aykuttasil.kotlinexamples.KotlinPattern.KotlinSingleton
+import com.aykuttasil.kotlinexamples.KotlinPattern.KotlinStrategy
 import com.aykuttasil.kotlinexamples.KotlinPattern.KotlinTemplate
 import org.jetbrains.anko.button
 import org.jetbrains.anko.sdk25.coroutines.onClick
@@ -29,6 +30,11 @@ class MainActivity : AppCompatActivity() {
             button("Kotlin Template") {
                 onClick {
                     startActivity(Intent(this@MainActivity, KotlinTemplate::class.java))
+                }
+            }
+            button("Kotlin Strategy") {
+                onClick {
+                    startActivity(Intent(this@MainActivity, KotlinStrategy::class.java))
                 }
             }
         }
