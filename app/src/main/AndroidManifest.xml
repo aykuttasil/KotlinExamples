@@ -18,7 +18,8 @@
         </activity>
         <activity android:name=".KotlinExtension" />
         <activity android:name=".KotlinPattern.KotlinDecorator" />
-        <activity android:name=".KotlinSingleton" />
+        <activity android:name=".KotlinPattern.KotlinSingleton" />
+        <activity android:name=".KotlinPattern.KotlinTemplate" />
     </application>
 
 </manifest>

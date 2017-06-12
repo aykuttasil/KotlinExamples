@@ -1,8 +1,9 @@
-package com.aykuttasil.kotlinexamples
+package com.aykuttasil.kotlinexamples.KotlinPattern
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.util.Log
+import com.aykuttasil.kotlinexamples.R
 
 class KotlinSingleton : AppCompatActivity() {
 
