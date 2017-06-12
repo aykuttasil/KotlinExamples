@@ -37,6 +37,11 @@ class MainActivity : AppCompatActivity() {
                     startActivity(Intent(this@MainActivity, KotlinStrategy::class.java))
                 }
             }
+            button("Kotlin Iterator") {
+                onClick {
+                    startActivity(Intent(this@MainActivity, KotlinIterator::class.java))
+                }
+            }
         }
     }
 }
