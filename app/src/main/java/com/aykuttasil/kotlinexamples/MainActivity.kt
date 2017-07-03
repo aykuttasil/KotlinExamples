@@ -1,18 +1,18 @@
 package com.aykuttasil.kotlinexamples
 
 import android.content.Intent
+import android.os.Build
 import android.os.Bundle
+import android.support.annotation.RequiresApi
 import android.support.v7.app.AppCompatActivity
-import com.aykuttasil.kotlinexamples.KotlinPattern.KotlinDecorator
-import com.aykuttasil.kotlinexamples.KotlinPattern.KotlinSingleton
-import com.aykuttasil.kotlinexamples.KotlinPattern.KotlinStrategy
-import com.aykuttasil.kotlinexamples.KotlinPattern.KotlinTemplate
+import com.aykuttasil.kotlinexamples.KotlinPattern.*
 import org.jetbrains.anko.button
 import org.jetbrains.anko.sdk25.coroutines.onClick
 import org.jetbrains.anko.verticalLayout
 
 class MainActivity : AppCompatActivity() {
 
+    @RequiresApi(Build.VERSION_CODES.N)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -40,6 +40,11 @@ class MainActivity : AppCompatActivity() {
             button("Kotlin Iterator") {
                 onClick {
                     startActivity(Intent(this@MainActivity, KotlinIterator::class.java))
+                }
+            }
+            button("Kotlin Sealed") {
+                onClick {
+                    startActivity(Intent(this@MainActivity, KotlinSealedClass::class.java))
                 }
             }
         }
